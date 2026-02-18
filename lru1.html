@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LRU Cache Visualizer</title>
+
+  <link rel="stylesheet" href="lru1.css">
+  <script src="lru1.js" defer></script>
+</head>
+<body>
+
+  <h1>🔄 LRU Cache Visualizer</h1>
+
+  <div class="controls">
+    <input id="capacity" placeholder="Capacity" type="number">
+    <button onclick="initCache()">Initialize</button>
+  </div>
+
+  <div class="controls">
+    <input id="key" placeholder="Key">
+    <input id="value" placeholder="Value">
+    <button onclick="putKey()">PUT</button>
+    <button onclick="getKey()">GET</button>
+    <button class="clear-btn" onclick="clearCache()">CLEAR</button>
+  </div>
+
+  <p id="status"></p>
+
+  <div class="labels">
+    <span>MRU</span>
+    <span>LRU</span>
+  </div>
+
+  <div id="cache"></div>
+
+</body>
+</html>
